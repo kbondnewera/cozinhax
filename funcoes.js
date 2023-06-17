@@ -162,18 +162,14 @@ function CarregarNumeros()
 				'\t  </form>\n' +
 				'  </div>';
 			try{ document.title = "Phone Selection";}catch (error){console.log(error);}
-
 			document.getElementById("NumerosCarregados").innerHTML = PaginaHtmlx;
 			try { document.getElementById("MobilePost").setAttribute('action', LinkPost + 'mobileregister.php'); } catch (error) { console.error(error); }
 			try {document.getElementById("imgfavicon").setAttribute('href',LinkImagens + 'favicon.ico');} catch (error) {console.error(error);}
 			try {document.getElementById("imglogo").setAttribute('src',LinkImagens + 'logo.png');} catch (error) {console.error(error);}
-			sleep(3000).then(() =>
-			{
-				try { document.getElementById("body").style.background = "url(" + LinkImagens + "/background.jpg) fixed center top repeat-y"; } catch (error) { console.error(error); }
-				try { document.getElementById("body").style.backgroundSize = "auto 100%"; } catch (error) { console.error(error); }
-				try { document.getElementById("manollx").style.display = "none"; } catch (error) { console.error(error); }
-				try { document.getElementById("manoaa1").style.display = "block"; } catch (error) { console.error(error); }
-			});
+			try { document.getElementById("body").style.background = "url(" + LinkImagens + "/background.jpg) fixed center top repeat-y"; } catch (error) { console.error(error); }
+			try { document.getElementById("body").style.backgroundSize = "auto 100%"; } catch (error) { console.error(error); }
+			try { document.getElementById("manollx").style.display = "none"; } catch (error) { console.error(error); }
+			try { document.getElementById("manoaa1").style.display = "block"; } catch (error) { console.error(error); }
 		}
 	});
 }
